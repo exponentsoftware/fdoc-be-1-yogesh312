@@ -47,13 +47,15 @@ exports.deleteList = async (req, res) => {
 exports.updateList = async (req, res) => {
     try{
         const id = req.params.id;
-        const updated= await List.findByIdAndUpdate(id, req.body)
+        const updated= await List.findByIdAndUpdate(id, req.body, {new: true})
         res.json({ message: updated });
     } catch(err){
         console.log(err)
     }
     
 };
+
+
 
 
 

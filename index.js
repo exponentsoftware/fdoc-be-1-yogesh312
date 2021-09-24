@@ -26,6 +26,6 @@ const server = app.listen(8000, () => {
 
 
 
-//const Message = mongoose.model("Message");
+
 const User = mongoose.model("List");
 

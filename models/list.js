@@ -5,9 +5,11 @@ const listSchema = new mongoose.Schema(
     username: {
       type: String,
       required: "name is required",
+      trim:true,
     },
     title: {
       type: String,
+      trim:true,
       
     },
     track: {
@@ -23,6 +25,7 @@ const listSchema = new mongoose.Schema(
     // },
     category: {
       type: String,
+      trim:true,
       
     }
   },
